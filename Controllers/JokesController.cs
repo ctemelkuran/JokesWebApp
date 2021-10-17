@@ -34,7 +34,8 @@ namespace JokesWebApp.Controllers
         // GET: Jokes/ShowSearchResults
         public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
         {
-            return View(); 
+            return View("Index", await _context.Joke.Where( j => j.JokeQuestion
+                .Contains(SearchPhrase)).ToListAsync()); // await indicates sync programming
         }
 
         // GET: Jokes/Details/5
