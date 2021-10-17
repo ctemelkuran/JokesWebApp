@@ -4,11 +4,11 @@
 
 This project is created with the help of [Shad Sluiter](https://www.youtube.com/user/shadsluiter)'s [ASP.NET Core Crash Course](https://www.youtube.com/watch?v=BfEjDD8mWYg) tutorial.
 It is a simple ASP.NET Core MVC Web Application. Individual user accounts can be created. Create, edit and delete options needs user authentication.
-
+For the database built-in SQL Server in Visual Studio 2019 is used.
 
 ### Usage
 
-For database management handled by the ORM following code should run in Package Manager Console:
+For database management to get handled by the ORM following code should run in Package Manager Console:
 
 1. Add migration
 	```sh
